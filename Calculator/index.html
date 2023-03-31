@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <form class="calculatorform" name="calculatorform">
+    <div class="mainbody">
+        <div class="aayush">
+            <div class="logo"><img src="Images/calculator-solid-svgrepo-com.svg"></div>
+            <h2>CALCULATOR</h2>
+        </div>
+            <div class="text">
+                <button class="AC" name="clear" onclick="Clear()">AC</button>
+                <input class="Cancel" name="delete" value="D" type="button" onclick="Delete()" />
+                <input id="screen" name="screen" type = "text"/>
+            </div>
+            <div class="col">
+                <div class="col1">
+                    <div class="madeby">BY AAYUSH SONDHIYA</div>
+                </div>
+                <div class="col2">
+                    <div class="sec1">
+                        <input class="Cancel" name="num9" value="9" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num8"  value="8" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num7"  value="7" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="plus"  value="+" type="button" onclick="valuebutton(this);">
+                    </div>
+                    <div class="sec1">
+                        <input class="Cancel" name="num6"  value="6" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num5"  value="5" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num4"  value="4" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="sub"  value="-" type="button" onclick="valuebutton(this);">
+                    </div>
+                    <div class="sec1">
+                        <input class="Cancel" name="num3"  value="3" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num2"  value="2" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num1"  value="1" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="div"  value="/" type="button" onclick="valuebutton(this);">
+                    </div>
+                    <div class="sec1">
+                        <input class="Cancel" name="num00"  value="00" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="num0"  value="0" type="button" onclick="valuebutton(this);">
+                        <input class="Cancel" name="equal"  value="=" type="button" onclick="Calculate()">
+                        <input class="Cancel" name="mul"  value="*" type="button" onclick="valuebutton(this);">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="javascript.js"></script>
+</form>
+</body>
+
+</html>
